@@ -4,4 +4,4 @@ class Figure:
         self.color = color
 
     def intersectRay(self, camera, direction):
-        return [-1]
+        return -1
