@@ -1,11 +1,13 @@
 from figure import Figure
-from point import Point
 from math import inf, sqrt
 import numpy as np
 
+def normalize(vector):
+   return vector / np.linalg.norm(vector)
+   
 class Sphere(Figure):
-    def __init__(self, color, center, radius = 10):
-        super().__init__(color)
+    def __init__(self, center, material, radius = 10):
+        super().__init__(material)
         self.center = center
         self.radius = radius
 
@@ -21,3 +23,6 @@ class Sphere(Figure):
             if t1 > 0 and t2 > 0:
                 return min(t1, t2)
         return -1
+    
+    def getNormal(self, point):
+        return normalize(point - self.center)
