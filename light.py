@@ -4,7 +4,7 @@ def normalize(vector):
    return vector / np.linalg.norm(vector)
 
 class Light:
-    def __init__(self, position, ambient = np.array([1, 1, 1]), diffuse = np.array([1, 1, 1]), specular = np.array([1, 1, 1])):
+    def __init__(self, position, ambient = np.array([1, 0, 0]), diffuse = np.array([0.5, 0.5, 0.5]), specular = np.array([0.5, 0.5, 0.5])):
         self.position = position
         self.ambient = ambient
         self.diffuse = diffuse

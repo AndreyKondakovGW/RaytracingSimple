@@ -21,8 +21,8 @@ class Sphere(Figure):
             t1 = (-b + sqrt(discriminant)) / 2
             t2 = (-b - sqrt(discriminant)) / 2
             if t1 > 0 and t2 > 0:
-                return min(t1, t2)
-        return -1
+                return self, min(t1, t2)
+        return None, -1
     
     def getNormal(self, point):
         return normalize(point - self.center)
