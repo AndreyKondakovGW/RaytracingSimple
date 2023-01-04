@@ -1,7 +1,6 @@
 from figure import Figure
 from poly import Polygon
 import numpy as np
-from math import inf
 
 class Octahedron(Figure):
     def __init__(self, material, center, sizes = np.array([1, 1, 1])):

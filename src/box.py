@@ -2,6 +2,7 @@
 from figure import Figure
 from math import inf, sqrt
 import numpy as np
+
 def normalize(vector):
    return vector / np.linalg.norm(vector)
 class Box(Figure):

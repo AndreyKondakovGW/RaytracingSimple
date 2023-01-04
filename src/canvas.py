@@ -1,5 +1,4 @@
 from tkinter import Canvas, PhotoImage
-from point import Point
 import numpy as np
 from PIL import Image, ImageTk
 
@@ -11,9 +10,6 @@ class MyCanvas(Canvas):
         self.af_point = None
         self.init_pixels()
         self.show_image()
-
-    def set_center(self, x, y, z=0):
-        self.center = Point(x, y, z)
 
     def init_pixels(self):
         self.pixels = np.ones((self.height,self.width, 3))*255

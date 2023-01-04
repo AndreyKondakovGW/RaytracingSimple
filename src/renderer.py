@@ -1,4 +1,3 @@
-from point import Point
 from light import Light
 import numpy as np
 from multiprocessing import Pool
@@ -25,8 +24,8 @@ class RayCaster:
         self.scene = scene
 
         self.lights = [
-         #Light(np.array([0.3,0.1,2]), ambient = np.array([0.5,0.5,0.5])),
-         Light(np.array([-0.4, -0.3, 0.49]), ambient = np.array([0.5,0.5,0.5]))]
+         Light(np.array([0.3,0.1,2]), ambient = np.array([0.5,0.5,0.5])),
+         Light(np.array([-0.4, -0.3, 0.55]), ambient = np.array([0.5,0.5,0.5]))]
     
     def count_pixel_color(self, d):
         i,j,x,y = d

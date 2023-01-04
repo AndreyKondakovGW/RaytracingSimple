@@ -1,4 +1,3 @@
-import sys
 import os
 os.path.realpath(__file__)
 from UI import UI
@@ -8,8 +7,6 @@ from surface import Surface
 import numpy as np
 from material import Material
 from box import Box
-from octahedron import Octahedron
-from poly import Polygon
 
 
 if __name__ == '__main__':
